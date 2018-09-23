@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/main_control_layout"
+        android:background="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/intensity_view"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/holo_green_dark"
+        android:layout_below="@+id/main_control_layout"
+        android:layout_width="250dp"
+        android:layout_height="20dp">
+
+        <TextView
+            android:id="@+id/txt_sixtyhz_intensity"
+            android:gravity="center_horizontal"
+            android:textSize="10sp"
+            android:textColor="@android:color/white"
+            android:background="@android:color/black"
+            android:layout_marginLeft="12dp"
+            android:text=""
+            android:layout_width="36dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:id="@+id/txt_twothirtyhz_intensity"
+            android:gravity="center_horizontal"
+            android:textSize="10sp"
+            android:textColor="@android:color/white"
+            android:background="@android:color/black"
+            android:layout_marginLeft="12dp"
+            android:text=""
+            android:layout_width="36dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:id="@+id/txt_ninetenhz_intensity"
+            android:gravity="center_horizontal"
+            android:textSize="10sp"
+            android:textColor="@android:color/white"
+            android:background="@android:color/black"
+            android:layout_marginLeft="12dp"
+            android:text="910Hz"
+            android:layout_width="36dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:id="@+id/txt_fourkilohz_intensity"
+            android:gravity="center_horizontal"
+            android:textSize="10sp"
+            android:textColor="@android:color/white"
+            android:background="@android:color/black"
+            android:layout_marginLeft="12dp"
+            android:text="4kHz"
+            android:layout_width="36dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:id="@+id/txt_onefourkilohz_intensity"
+            android:gravity="center_horizontal"
+            android:textSize="10sp"
+            android:textColor="@android:color/white"
+            android:background="@android:color/black"
+            android:layout_marginLeft="12dp"
+            android:text="14kHz"
+            android:layout_width="36dp"
+            android:layout_height="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/intensity_view"
+        android:id="@+id/eqseekbar_layout"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:background="@android:color/holo_green_light"
+        android:rotation="270"
+        android:layout_width="250dp"
+        android:layout_height="250dp">
+
+        <SeekBar
+            android:layout_marginTop="15dp"
+            android:id="@+id/sixtyhz_seekbar"
+            android:background="@android:color/holo_orange_light"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content" />
+        <SeekBar
+            android:layout_marginTop="15dp"
+            android:id="@+id/twothirtyhz_seekbar"
+            android:background="@android:color/holo_red_light"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content" />
+        <SeekBar
+            android:layout_marginTop="15dp"
+            android:id="@+id/ninetenhz_seekbar"
+            android:background="@android:color/holo_orange_light"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content" />
+        <SeekBar
+            android:layout_marginTop="15dp"
+            android:id="@+id/fourkilohz_seekbar"
+            android:background="@android:color/holo_blue_dark"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content" />
+        <SeekBar
+            android:layout_marginTop="15dp"
+            android:id="@+id/onefourkilohz_seekbar"
+            android:background="@android:color/holo_orange_light"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/holo_green_dark"
+        android:layout_below="@+id/eqseekbar_layout"
+        android:layout_width="250dp"
+        android:layout_height="20dp">
+
+        <TextView
+            android:gravity="center_horizontal"
+            android:textSize="10sp"
+            android:textColor="@android:color/white"
+            android:background="@android:color/black"
+            android:layout_marginLeft="12dp"
+            android:text="60Hz"
+            android:layout_width="36dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:gravity="center_horizontal"
+            android:textSize="10sp"
+            android:textColor="@android:color/white"
+            android:background="@android:color/black"
+            android:layout_marginLeft="12dp"
+            android:text="230Hz"
+            android:layout_width="36dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:gravity="center_horizontal"
+            android:textSize="10sp"
+            android:textColor="@android:color/white"
+            android:background="@android:color/black"
+            android:layout_marginLeft="12dp"
+            android:text="910Hz"
+            android:layout_width="36dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:gravity="center_horizontal"
+            android:textSize="10sp"
+            android:textColor="@android:color/white"
+            android:background="@android:color/black"
+            android:layout_marginLeft="12dp"
+            android:text="4kHz"
+            android:layout_width="36dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:gravity="center_horizontal"
+            android:textSize="10sp"
+            android:textColor="@android:color/white"
+            android:background="@android:color/black"
+            android:layout_marginLeft="12dp"
+            android:text="14kHz"
+            android:layout_width="36dp"
+            android:layout_height="20dp" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
